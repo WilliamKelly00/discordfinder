@@ -24,7 +24,7 @@ a {
   box-sizing: border-box;
 }
 
-/* Navbar */
+Navbar
 
 .navbar {
   height: 70px;
@@ -62,7 +62,7 @@ a {
 
 /* Buttons */
 
-.btn, button {
+/* .btn, button {
   background-color: var(--color-gray);
   border: none;
   color: var(--color-text);
@@ -128,4 +128,4 @@ button.btn-logo {
   text-transform: uppercase;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
-}
+} */
