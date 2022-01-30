@@ -1,3 +1,6 @@
+import { TextField } from '@mui/material';
+import { Button } from '@mui/material';
+
 export default function ServerForm(){
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -18,11 +21,11 @@ export default function ServerForm(){
     }
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text" name="name"/>
-            <input type="text" name="link"/>
-            <input type="text" name="image"/>
-            <input type="text" name="description"/>
-            <button type="submit">Submit</button>
+            <TextField id="name" name="name" label="Server Name" variant="standard" />
+            <TextField id="link" name="link" label="Link" variant="standard" />
+            <TextField id="image" name="image" label="Image Link" variant="standard" />
+            <TextField id="description" name="description" label="Description" variant="standard" multiline/>
+            <Button type="submit" variant="contained">Submit</Button>
         </form>
     );
 }
