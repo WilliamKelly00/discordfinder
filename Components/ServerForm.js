@@ -8,7 +8,7 @@ export default function ServerForm(){
         const formData = Object.fromEntries(form.entries());
 
         console.log(formData);
-        const res = await fetch('/api/servers', {
+        const res = await fetch('/api/server', {
             body: JSON.stringify(formData),
             headers: {
                 'Content-Type': 'application/json'

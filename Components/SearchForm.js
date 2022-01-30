@@ -24,14 +24,16 @@ export default function SearchForm(){
     return (
         <div>
             <TextField id="SearchBar" label="Explore" variant="outlined" onChange={search} type="text"/>
-            {/* Add Styling, possible MUI */}
-            <ul>
+
+            <div className="server-container">
                 {hits.map(hit => (
-                    <li key={hit.entityId}>
-                        {hit.name} {hit.link}
-                    </li>
+                    <div classname="server-card" key={hit.entityId}>
+                        <img src={hit.image} alt={hit.name} />
+                        <h3>{hit.name}</h3>
+                        <p>{hit.description}</p>
+                    </div>
                 ))};
-            </ul>
+            </div>
         </div>
     );
 }
