@@ -1,7 +1,7 @@
-export default function FindServer{
+export default function FindServer(){
   return(
     <div>
-      <h1>Find a community!<h1>
+      <h1>Find a community!</h1>
     </div>
   );
 }
