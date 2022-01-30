@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { TextField } from "@mui/material";
 
 export default function SearchForm(){
 
@@ -22,7 +23,7 @@ export default function SearchForm(){
 
     return (
         <div>
-            <input onChange={search} type="text"/>
+            <TextField id="SearchBar" label="Explore" variant="outlined" onChange={search} type="text"/>
             {/* Add Styling, possible MUI */}
             <ul>
                 {hits.map(hit => (
