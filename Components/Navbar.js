@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-      <nav>
+      <nav className="navbar">
             <ul>
                 <li>
                     <Link href="/">
-                        <button>Home</button>
+                        <button className="btn-blue">Home</button>
                     </Link>
                 </li>
             </ul>
