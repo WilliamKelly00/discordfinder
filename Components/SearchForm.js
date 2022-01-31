@@ -24,7 +24,7 @@ export default function SearchForm(){
     return (
         <div>
             <TextField id="SearchBar" label="Explore" variant="outlined" onChange={search} type="text"/>
-
+            
             <div className="server-container">
                 {hits.map(hit => (
                     <div classname="server-card" key={hit.entityId}>
