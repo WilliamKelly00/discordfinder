@@ -21,10 +21,14 @@ export default function ServerForm(){
     }
     return (
         <form onSubmit={handleSubmit}>
-            <TextField id="name" name="name" label="Server Name" variant="standard" />
-            <TextField id="link" name="link" label="Link" variant="standard" />
-            <TextField id="image" name="image" label="Image Link" variant="standard" />
-            <TextField id="description" name="description" label="Description" variant="standard" multiline/>
+            <TextField margin="dense" id="name" name="name" label="Server Name" variant="standard" />
+            <br></br>
+            <TextField margin="dense" id="link" name="link" label="Link" variant="standard" />
+            <br></br>
+            <TextField margin="dense" id="image" name="image" label="Image Link" variant="standard" />
+            <br></br>
+            <TextField margin="dense" id="description" name="description" label="Description" variant="standard" multiline/>
+            <br></br>
             <Button type="submit" variant="contained">Submit</Button>
         </form>
     );
