@@ -6,21 +6,6 @@ export default function SearchForm(){
 
     const [hits, setHits] = useState([]);
 
-    // const search = async (event) => {
-    //     const q = event.target.value;
-    //     //add debouncing
-    //     if(q.length > 2){
-    //         const params = new URLSearchParams({ q });
-            
-    //         const res = await fetch('api/search?' + params);
-    //         const result = await res.json();
-    //         console.log(result);
-    //         setHits(result['servers']);
-
-    //     }
-
-    // };
-
     const search = useCallback(
         debounce(async (event) => {
             const q = event.target.value;
