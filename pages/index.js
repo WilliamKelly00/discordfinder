@@ -9,10 +9,14 @@ import { Typography } from '@mui/material'
 export default function Home() {
   return (
     <main>
-      <div className='hero'>
-        <Typography variant='h2'>Find Your Community!</Typography>
+      <div className='home'>
+        <div className='hero'>
+          <Typography variant='h2' 
+          sx={{ color: 'text.primary', fontSize: 60, fontWeight: '700' }}
+          >Find Your Community!</Typography>
+        </div>
+        <SearchForm />
       </div>
-      <SearchForm />
     </main>
   )
 }

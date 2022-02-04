@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
 :root {
   --color-bg: #eef0f1;
   --color-text: #08090a;
@@ -11,8 +13,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  margin-top: 50px;
 }
 
 a {
@@ -24,7 +26,15 @@ a {
   box-sizing: border-box;
 }
 
-Navbar
+.form{
+  text-align: center;
+  justify-content: center;
+}
+
+.home{
+  text-align: center;
+  justify-content: center;
+}
 
 .navbar {
   height: 70px;
@@ -62,7 +72,7 @@ Navbar
 
 /* Buttons */
 
-/* .btn, button {
+.btn, button {
   background-color: var(--color-gray);
   border: none;
   color: var(--color-text);
@@ -128,4 +138,8 @@ button.btn-logo {
   text-transform: uppercase;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
-} */
+}
+
+.push-left {
+  margin-left: auto;
+}

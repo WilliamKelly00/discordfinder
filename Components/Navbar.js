@@ -9,6 +9,16 @@ export default function Navbar() {
                         <button className="btn-blue">Home</button>
                     </Link>
                 </li>
+                <li className="push-left">
+                    <Link href="/addserver">
+                        <button>Add Server</button>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/">
+                        <button className="btn-blue">Login</button>
+                    </Link>
+                </li>
             </ul>
       </nav>
   );
