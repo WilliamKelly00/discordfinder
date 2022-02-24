@@ -1,3 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Discord Finder
 
-This project was created to allow people to find discord communities they would like to join through the use of user submitted servers, and the use of full text search to find those communities.
+This application uses full-text search to allow users to find specific discord communities, and allows users to upload their own.
+Created with Next, React, and Redis.
+
+## Features
+- User uploaded communities
+- Full-text search on community name and description
+
+## Why Use?
+- Allows for users to find communities they otherwise would not, due to the nature of full-text search.
+- Allows for users to easily share their own communities.
